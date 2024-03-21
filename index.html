@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Boarding Pass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        #boardingPass {
+            margin-top: 20px;
+            text-align: center;
+        }
+        p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Airline Boarding Pass</h1>
+        <div id="boardingPass">
+            <p><strong>Flight Number:</strong> ABC123</p>
+            <p><strong>Departure:</strong> 10:00 AM</p>
+            <p><strong>Arrival:</strong> 12:00 PM</p>
+            <p><strong>Gate:</strong> A1</p>
+            <p><strong>Seat:</strong> 12A</p>
+            <img id="qrCode" src="images/dummy_qr_code.png" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
