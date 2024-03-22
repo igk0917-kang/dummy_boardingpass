@@ -12,44 +12,97 @@
             background-color: #f2f2f2;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
             padding: 20px;
+        }
+        .boarding-pass {
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
         }
-        h1 {
-            color: #007bff;
+        .header {
             text-align: center;
+            margin-bottom: 20px;
         }
-        #boardingPass {
-            margin-top: 20px;
+        .footer {
             text-align: center;
+            margin-bottom: 20px;
+            margin-top: 100px;
         }
-        p {
-            margin: 8px 0;
-            font-size: 16px;
-            color: #555;
-        }
-        img {
+        .footer img {
             display: block;
             margin: 0 auto;
             width: 80%;
             max-width: 200px;
         }
+        .row {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .row p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .flight-info {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Airline Boarding Pass</h1>
-        <div id="boardingPass">
-            <p><strong>Flight Number:</strong> ABC123</p>
-            <p><strong>Departure:</strong> 10:00 AM</p>
-            <p><strong>Arrival:</strong> 12:00 PM</p>
-            <p><strong>Gate:</strong> A1</p>
-            <p><strong>Seat:</strong> 12A</p>
-            <img id="qrCode" src="images/dummy_qr_code.png" alt="QR Code">
+        <div class="boarding-pass">
+            <div class="header">
+                <h2>Airline Name</h2>
+                <p>Gate: A1</p>
+            </div>
+            <div class="row">
+                <div>
+                    <p><strong>Depart:</strong></p>
+                    <p>Departure Location</p>
+                </div>
+                <div>
+                    <p><strong>Arrive:</strong></p>
+                    <p>Landing Location</p>
+                </div>
+            </div>
+            <div class="row flight-info">
+                <div>
+                    <p><strong>Departure Time:</strong></p>
+                    <p>10:00 AM</p>
+                </div>
+                <div>
+                    <p><strong>Flight Number:</strong></p>
+                    <p>ABC123</p>
+                </div>
+                <div>
+                    <p><strong>Cabin:</strong></p>
+                    <p>Economy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p><strong>Passenger:</strong></p>
+                    <p>John Doe</p>
+                </div>
+                <div>
+                    <p><strong>Terminal:</strong></p>
+                    <p>Terminal 1</p>
+                </div>
+                <div>
+                    <p><strong>Seat:</strong></p>
+                    <p>12A</p>
+                </div>
+                <div>
+                    <p><strong>Zone:</strong></p>
+                    <p>Zone 1</p>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="images/dummy_qr_code.png" alt="QR Code">
+            </div>
         </div>
     </div>
 </body>
