@@ -7,4 +7,4 @@ app.mount("/images", StaticFiles(directory="images"), name="images")
 
 @app.get("/")
 async def read_root():
-    return FileResponse("phil.html")
+    return FileResponse("index.html")
